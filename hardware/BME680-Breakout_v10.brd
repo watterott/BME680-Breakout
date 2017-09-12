@@ -212,7 +212,8 @@ Air-Quality</text>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="0.6" y="1.1" radius="0.1" width="0.127" layer="21"/>
 <text x="0" y="2.1" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-2.1" size="0.8128" layer="21" font="vector" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+<text x="0" y="-2.1" size="0.8128" layer="27" font="vector" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+<circle x="-0.5" y="-0.75" radius="0.2" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -766,7 +767,7 @@ Air-Quality</text>
 <element name="J1" library="we-rcl" package="JUMPER2-0603" value="JUMPER2-0603" x="3.7465" y="4.445" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.2865" y="4.445" size="0.8128" layer="21" font="vector" ratio="15" align="center"/>
 </element>
-<element name="HOUSING1" library="we-sensor" package="SF2" value="SF2" x="4.7625" y="9.8425"/>
+<element name="HOUSING" library="we-sensor" package="SF2" value="SF2" x="4.7625" y="9.8425"/>
 <element name="IC1" library="we-sensor" package="BME680" value="BME680" x="4.7625" y="9.8425"/>
 </elements>
 <signals>

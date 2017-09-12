@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -182,7 +182,8 @@
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="0.6" y="1.1" radius="0.1" width="0.127" layer="21"/>
 <text x="0" y="2.1" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-2.1" size="0.8128" layer="21" font="vector" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+<text x="0" y="-2.1" size="0.8128" layer="27" font="vector" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+<circle x="-0.5" y="-0.75" radius="0.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -226,19 +227,19 @@
 <deviceset name="BME680" prefix="IC">
 <description>Bosch BME280 Humidity, Pressure, Air Quality Sensor</description>
 <gates>
-<gate name="G$1" symbol="BME280" x="0" y="0"/>
+<gate name="IC" symbol="BME280" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="BME680">
 <connects>
-<connect gate="G$1" pin="CSB" pad="2"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@2" pad="7"/>
-<connect gate="G$1" pin="SCK" pad="4"/>
-<connect gate="G$1" pin="SDI" pad="3"/>
-<connect gate="G$1" pin="SDO" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VCCIO" pad="6"/>
+<connect gate="IC" pin="CSB" pad="2"/>
+<connect gate="IC" pin="GND@1" pad="1"/>
+<connect gate="IC" pin="GND@2" pad="7"/>
+<connect gate="IC" pin="SCK" pad="4"/>
+<connect gate="IC" pin="SDI" pad="3"/>
+<connect gate="IC" pin="SDO" pad="5"/>
+<connect gate="IC" pin="VCC" pad="8"/>
+<connect gate="IC" pin="VCCIO" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8740,13 +8741,13 @@ all kinds in 0603 and 0402</description>
 <part name="LOGO2" library="we-symbol" deviceset="OSHW_LOGO" device="X0070"/>
 <part name="J1" library="we-rcl" deviceset="JUMPER2" device="-0603"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="HOUSING1" library="we-sensor" deviceset="SF2" device=""/>
+<part name="HOUSING" library="we-sensor" deviceset="SF2" device=""/>
 <part name="IC1" library="we-sensor" deviceset="BME680" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="109.22" y="119.38" size="1.778" layer="91">I2C Address
+<text x="111.76" y="119.38" size="1.778" layer="97">I2C Address
 open   = 0x77
 closed = 0x76</text>
 <text x="162.56" y="22.86" size="1.27" layer="95" align="top-left">Released under the Creative Commons Attribution Share-Alike 
@@ -8756,9 +8757,9 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 </plain>
 <instances>
 <instance part="B1" gate="BOARD" x="86.36" y="83.82"/>
-<instance part="GND1" gate="1" x="60.96" y="124.46"/>
-<instance part="P+1" gate="VCC" x="50.8" y="152.4"/>
-<instance part="C1" gate="C" x="60.96" y="134.62" rot="R90"/>
+<instance part="GND1" gate="1" x="58.42" y="124.46"/>
+<instance part="P+1" gate="VCC" x="48.26" y="152.4"/>
+<instance part="C1" gate="C" x="58.42" y="134.62" rot="R90"/>
 <instance part="R1" gate="R" x="191.77" y="154.94" rot="R90"/>
 <instance part="IC2" gate="A" x="86.36" y="43.18"/>
 <instance part="T1" gate="T1" x="204.47" y="147.32" smashed="yes" rot="R270">
@@ -8777,10 +8778,10 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 <attribute name="NAME" x="201.93" y="35.56" size="1.778" layer="95"/>
 <attribute name="VALUE" x="201.93" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="P+2" gate="VCC" x="60.96" y="152.4"/>
-<instance part="C2" gate="C" x="50.8" y="134.62" rot="R90"/>
+<instance part="P+2" gate="VCC" x="58.42" y="152.4"/>
+<instance part="C2" gate="C" x="48.26" y="134.62" rot="R90"/>
 <instance part="GND2" gate="1" x="68.58" y="124.46"/>
-<instance part="GND3" gate="1" x="50.8" y="124.46"/>
+<instance part="GND3" gate="1" x="48.26" y="124.46"/>
 <instance part="R2" gate="R" x="217.17" y="154.94" rot="R90"/>
 <instance part="R3" gate="R" x="191.77" y="119.38" rot="R90"/>
 <instance part="R4" gate="R" x="217.17" y="119.38" rot="R90"/>
@@ -8810,10 +8811,10 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 <instance part="X2" gate="X" x="173.99" y="7.62"/>
 <instance part="LOGO1" gate="L" x="207.01" y="7.62"/>
 <instance part="LOGO2" gate="L" x="194.31" y="7.62"/>
-<instance part="J1" gate="J" x="106.68" y="124.46" rot="R90"/>
-<instance part="GND8" gate="1" x="106.68" y="114.3"/>
-<instance part="HOUSING1" gate="G$1" x="83.82" y="139.7"/>
-<instance part="IC1" gate="G$1" x="83.82" y="137.16"/>
+<instance part="J1" gate="J" x="109.22" y="124.46" rot="R90"/>
+<instance part="GND8" gate="1" x="109.22" y="114.3"/>
+<instance part="HOUSING" gate="G$1" x="83.82" y="137.16"/>
+<instance part="IC1" gate="IC" x="83.82" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -8821,21 +8822,21 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="68.58" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="142.24" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="142.24" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C2" gate="C" pin="2"/>
-<wire x1="50.8" y1="137.16" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<junction x="50.8" y="142.24"/>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
+<wire x1="48.26" y1="137.16" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<junction x="48.26" y="142.24"/>
+<pinref part="IC1" gate="IC" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="68.58" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="139.7" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="139.7" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C1" gate="C" pin="2"/>
-<wire x1="60.96" y1="137.16" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
-<junction x="60.96" y="139.7"/>
-<pinref part="IC1" gate="G$1" pin="VCCIO"/>
+<wire x1="58.42" y1="137.16" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+<junction x="58.42" y="139.7"/>
+<pinref part="IC1" gate="IC" pin="VCCIO"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="VO"/>
@@ -8889,18 +8890,18 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="68.58" y1="134.62" x2="68.58" y2="127" width="0.1524" layer="91"/>
 <junction x="68.58" y="134.62"/>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
-<pinref part="IC1" gate="G$1" pin="GND@2"/>
+<pinref part="IC1" gate="IC" pin="GND@1"/>
+<pinref part="IC1" gate="IC" pin="GND@2"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="C2" gate="C" pin="1"/>
-<wire x1="50.8" y1="127" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="127" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="C" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="60.96" y1="132.08" x2="60.96" y2="127" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="132.08" x2="58.42" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -8926,18 +8927,18 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="J1" gate="J" pin="1"/>
-<wire x1="106.68" y1="116.84" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="116.84" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LV_SDO" class="0">
 <segment>
-<wire x1="99.06" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
-<label x="114.3" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="99.06" y1="139.7" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
+<label x="116.84" y="139.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J" pin="2"/>
-<wire x1="106.68" y1="139.7" x2="114.3" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="129.54" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
-<junction x="106.68" y="139.7"/>
-<pinref part="IC1" gate="G$1" pin="SDO"/>
+<wire x1="109.22" y1="139.7" x2="116.84" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="129.54" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
+<junction x="109.22" y="139.7"/>
+<pinref part="IC1" gate="IC" pin="SDO"/>
 </segment>
 <segment>
 <pinref part="T1" gate="T1" pin="S"/>
@@ -8951,9 +8952,9 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 </net>
 <net name="LV_CS" class="0">
 <segment>
-<wire x1="99.06" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
-<label x="114.3" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="CSB"/>
+<wire x1="99.06" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
+<label x="116.84" y="142.24" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="IC" pin="CSB"/>
 </segment>
 <segment>
 <pinref part="T1" gate="T2" pin="S"/>
@@ -8967,9 +8968,9 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 </net>
 <net name="LV_SDI" class="0">
 <segment>
-<wire x1="99.06" y1="137.16" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
-<label x="114.3" y="137.16" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="SDI"/>
+<wire x1="99.06" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
+<label x="116.84" y="137.16" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="IC" pin="SDI"/>
 </segment>
 <segment>
 <pinref part="T2" gate="T1" pin="S"/>
@@ -8983,9 +8984,9 @@ Designed by Stephan Watterott (Watterott electronic)</text>
 </net>
 <net name="LV_SCK" class="0">
 <segment>
-<wire x1="99.06" y1="134.62" x2="114.3" y2="134.62" width="0.1524" layer="91"/>
-<label x="114.3" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="SCK"/>
+<wire x1="99.06" y1="134.62" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
+<label x="116.84" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="IC" pin="SCK"/>
 </segment>
 <segment>
 <pinref part="T2" gate="T2" pin="S"/>
