@@ -22,4 +22,4 @@ Breakout with BME680 Digital Environmental Sensor from Bosch Sensortec.
 ## Hardware and Software
 * [Schematics + Layout](https://github.com/watterott/BME680-Breakout/tree/master/hardware)
 * [Bosch Sensortec BME680 driver](https://github.com/BoschSensortec/BME680_driver)
-* Arduino Library and Examples: [BME680](https://github.com/kriswiner/BME680), [DFRobot_BME680](https://github.com/DFRobot/DFRobot_BME680)
+* Arduino Library and Examples: [BME680_Library](https://github.com/vicatcu/BME680_Breakout/tree/master/BME680_Library), [DFRobot_BME680](https://github.com/DFRobot/DFRobot_BME680), [BME680](https://github.com/kriswiner/BME680)
