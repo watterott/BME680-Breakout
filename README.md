@@ -7,8 +7,6 @@ Breakout with BME680 Digital Environmental Sensor from Bosch Sensortec.
 * Temperature Sensor -40...85°C
 * Pressure Sensor 300...1100hPa (+9000...-500m above/below sea level)
 * Humidity Sensor 0...100%
-  * Accuracy tolerance: +/-3 % relative
-  * Hysteresis: <1.5% relative
 * Gas Sensor for Air Quality (IAQ)
 * SPI Interface (up to 10MHz)
 * TWI/I2C Interface (address 0x76 when SDO=0 or 0x77 when SDO=1, CS=1 for I2C)
@@ -17,10 +15,3 @@ Breakout with BME680 Digital Environmental Sensor from Bosch Sensortec.
 
 ## Shop
 * [BME680-Breakout](http://www.watterott.com/en/BME680-Breakout)
-
-
-## Hardware and Software
-* [Schematics + Layout](https://github.com/watterott/BME680-Breakout/tree/master/hardware)
-* [Bosch Sensortec BME680 driver](https://github.com/BoschSensortec/BME680_driver)
-* Arduino Library and Examples: [Adafruit_BME680](https://github.com/adafruit/Adafruit_BME680), [BME680_Library](https://github.com/vicatcu/BME680_Breakout/tree/master/BME680_Library), [DFRobot_BME680](https://github.com/DFRobot/DFRobot_BME680), [BME680](https://github.com/kriswiner/BME680)
-* Raspberry Pi Library and Examples: [bme680-raspberry](https://github.com/twartzek/bme680-raspberry), [bme680](https://github.com/pimoroni/bme680)
