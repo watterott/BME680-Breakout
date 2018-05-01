@@ -1,7 +1,7 @@
 # BME680-Breakout
 Breakout with BME680 Digital Environmental Sensor from Bosch Sensortec.
 
-![BME680-Breakout](https://github.com/watterott/BME680-Breakout/raw/master/hardware/BME680-Breakout_v10.jpg)
+![BME680-Breakout](https://github.com/watterott/BME680-Breakout/raw/master/hardware/BME680-Breakout_v11.jpg)
 
 * [Bosch BME680](https://www.bosch-sensortec.com/bst/products/all_products/bme680) Integrated Environmental Sensor (Air Quality, Humidity, Pressure and Temperature)
 * Temperature Sensor -40...85°C
@@ -11,7 +11,4 @@ Breakout with BME680 Digital Environmental Sensor from Bosch Sensortec.
 * SPI Interface (up to 10MHz)
 * TWI/I2C Interface (address 0x76 when SDO=0 or 0x77 when SDO=1, CS=1 for I2C)
 * 3.3V - 5V Power Supply and Logic Level
-
-
-## Shop
-* [BME680-Breakout](http://www.watterott.com/en/BME680-Breakout)
+* **[Documentation on learn.watterott.com](http://learn.watterott.com/sensors/bme680/)**
